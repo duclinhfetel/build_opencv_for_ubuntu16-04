@@ -25,7 +25,7 @@ sudo apt-get install libgoogle-glog-dev libgflags-dev -y
 sudo apt-get install libgphoto2-dev libeigen3-dev libhdf5-dev doxygen -y
 
 sudo apt-get install python-dev python-pip -y 
-sudo pip install numpy==0.14.0 
+sudo pip install numpy==1.14.0 
 cd 
 git clone https://github.com/opencv/opencv.git
 cd opencv 
