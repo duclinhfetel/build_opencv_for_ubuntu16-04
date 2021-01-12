@@ -7,11 +7,11 @@ sudo apt-get install build-essential cmake git pkg-config libgtk-3-dev \
 cd 
 git clone https://github.com/opencv/opencv.git
 cd opencv 
-git checkout 4.5.1 
+git checkout 4.1.0
 cd
 git clone https://github.com/opencv/opencv_contrib.git
 cd opencv_contrib
-git checkout 4.5.1
+git checkout 4.1.0
 cd
 cd opencv
 mkdir build && cd build
@@ -25,6 +25,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
       -D WITH_QT=ON \
       -D WITH_OPENGL=ON \
       -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
+      -D OPENCV_ENABLE_NONFREE=ON \
       -D BUILD_EXAMPLES=ON ..
 #make -j$(nproc)
 #sudo make install
